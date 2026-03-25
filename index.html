@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 群聯電子 Family Day 資訊專區</title>
+    <meta name="description" content="2026 群聯電子家庭日活動資訊專區。包含活動流程、票券教學、交通資訊與專屬優惠。">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phison-family-day.netlify.app/">
+    <meta property="og:title" content="2026 群聯電子 Family Day 資訊專區">
+    <meta property="og:description" content="2026 群聯電子家庭日活動資訊專區。包含活動流程、票券教學、交通資訊與專屬優惠。">
+    <meta property="og:image" content="https://phison-family-day.netlify.app/全場域.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://phison-family-day.netlify.app/">
+    <meta property="twitter:title" content="2026 群聯電子 Family Day 資訊專區">
+    <meta property="twitter:description" content="2026 群聯電子家庭日活動資訊專區。包含活動流程、票券教學、交通資訊與專屬優惠。">
+    <meta property="twitter:image" content="https://phison-family-day.netlify.app/全場域.webp">
     <style>
         :root {
             --primary-color: #f37021;
@@ -255,6 +270,29 @@
             color: var(--secondary-color);
             margin-bottom: 10px;
             font-size: 1.1rem;
+        }
+
+        /* Back to TOP 按鈕 */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            font-size: 1.2rem;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        #backToTop:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.1);
         }
 
         /* 其他元件 */
@@ -515,8 +553,8 @@
             </table>
 
             <figure>
-                <img src="全場域.png" alt="地圖"
-                    onerror="this.src='https://placehold.co/1000x450/e9ecef/0056a0?text=請在此放置 全場域.png'">
+                <img src="全場域.webp" alt="地圖" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/1000x450/e9ecef/0056a0?text=全場域圖'">
                 <figcaption>📍 麗寶樂園渡假區全場域圖</figcaption>
             </figure>
 
@@ -676,8 +714,8 @@
                 </tr>
             </table>
             <figure>
-                <img src="電子票卷與禮卷登入操作步驟.png" alt="電子門票使用步驟"
-                    onerror="this.src='https://placehold.co/800x350/e9ecef/0056a0?text=請在此放置 電子票卷與禮卷登入操作步驟.png'">
+                <img src="電子票卷與禮卷登入操作步驟.webp" alt="電子門票使用步驟" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/800x350/e9ecef/0056a0?text=登入操作步驟'">
                 <figcaption>📱 電子門票與禮券登入操作步驟</figcaption>
             </figure>
         </div>
@@ -785,6 +823,12 @@
                 </tbody>
             </table>
 
+            <figure>
+                <img src="園區內 & 園區-火車站接駁詳細時刻表.webp" alt="接駁車時刻表" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/900x450/e9ecef/0056a0?text=接駁車時刻表'">
+                <figcaption>🚌 園區內 & 園區-火車站接駁詳細時刻表</figcaption>
+            </figure>
+
             <div
                 style="background:#e3f0fb;border-left:5px solid #4a90d9;border-radius:6px;padding:8px 16px;margin-bottom:8px;font-weight:700;font-size:1rem;color:#1a5f9e;">
                 📍 路線二：園區內接駁 (環線)
@@ -881,14 +925,14 @@
             </table>
 
             <figure>
-                <img src="停車線上繳費.png" alt="停車線上繳費"
-                    onerror="this.src='https://placehold.co/900x450/e9ecef/0056a0?text=請放置 停車線上繳費.png'">
+                <img src="停車線上繳費.webp" alt="停車線上繳費" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/900x450/e9ecef/0056a0?text=停車線上繳費'">
                 <figcaption>💳 掃碼線上繳納停車費，快速離場免排隊</figcaption>
             </figure>
 
             <figure>
-                <img src="停車場往主會場步行路線圖.png" alt="步行路線"
-                    onerror="this.src='https://placehold.co/900x450/e9ecef/0056a0?text=請放置 walking-map.png'">
+                <img src="停車場往主會場步行路線圖.webp" alt="步行路線" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/900x450/e9ecef/0056a0?text=步行路線圖'">
                 <figcaption>🚶 停車場往主會場步行路線圖</figcaption>
             </figure>
         </div>
@@ -932,13 +976,13 @@
 
             <br>
             <figure>
-                <img src="探索世界.png" alt="探索世界地圖"
-                    onerror="this.src='https://placehold.co/1000x600/e9ecef/0056a0?text=請放置 探索世界.png'">
+                <img src="探索世界.webp" alt="探索世界地圖" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/1000x600/e9ecef/0056a0?text=探索世界地圖'">
                 <figcaption>🎢 探索世界園區詳細地圖</figcaption>
             </figure>
             <figure>
-                <img src="馬拉灣.png" alt="馬拉灣地圖"
-                    onerror="this.src='https://placehold.co/1000x600/e9ecef/0056a0?text=請放置 馬拉灣.png'">
+                <img src="馬拉灣.webp" alt="馬拉灣地圖" loading="lazy" decoding="async"
+                    onerror="this.src='https://placehold.co/1000x600/e9ecef/0056a0?text=馬拉灣地圖'">
                 <figcaption>🌊 馬拉灣水樂園詳細地圖</figcaption>
             </figure>
         </div>
@@ -1710,6 +1754,9 @@
         </div>
     </div>
 
+    <!-- Back to TOP 按鈕 -->
+    <button id="backToTop" onclick="scrollToTop()" title="回頂端">↑</button>
+
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -1720,6 +1767,20 @@
             document.getElementById(tabName).style.display = "block";
             setTimeout(() => { document.getElementById(tabName).classList.add("active"); }, 10);
             evt.currentTarget.className += " active";
+        }
+
+        // Back to Top 功能
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            const btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
